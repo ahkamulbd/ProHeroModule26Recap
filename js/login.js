@@ -14,9 +14,11 @@ document.getElementById('btn-submit').addEventListener('click', function () {
     // Do not verify email password on the client side
 
     if (email === 'ami@ark.com' && password === '12345') {
-        console.log('Valid User');
+        //console.log('Valid User');
+        window.location.href = 'bank.html';
     }
     else {
-        console.log('Invalid User');
+        //console.log('Invalid User');
+        alert('Email and Password are not matched !!!!!!!')
     }
 })
