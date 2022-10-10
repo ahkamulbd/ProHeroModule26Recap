@@ -20,7 +20,7 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
                 <div class="bg-green-400 text-white px-8 py-5 rounded-xl">
                     <h4 class="text-3xl font-semibold mb-3">Deposit</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
                 </div>
                 <div class="bg-violet-400 text-white px-8 py-5 rounded-xl">
                     <h4 class="text-3xl font-semibold mb-3">Withdraw</h4>
@@ -37,30 +37,28 @@
 
         <section class="mt-10">
             <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
-                <div class="bg-teal-400 text-white px-8 py-5 rounded-xl">
-                    <h4 class="text-3xl font-semibold mb-3">Please Deposit</h4>
+                <div class="bg-teal-400 px-8 py-5 rounded-xl">
+                    <h4 class="text-3xl font-semibold mb-3 text-white">Please Deposit</h4>
                     <div class="pl-10">
-                        <input class="w-9/12 px-5 py-2 mb-5" type="text" name="" id="user-email"
+                        <input class="w-9/12 px-5 py-2 mb-5" type="text" name="" id="user-deposit"
                             placeholder="$ Amount you want to deposit">
 
 
-                        <button id="btn-submit"
-                            class="bg-amber-600 text-white text-xl font-semibold px-8 py-3 block rounded-xl">Deposit</button>
+                        <button id="btn-deposit"
+                            class="bg-amber-600 text-white text-xl font-semibold px-8 py-3 block rounded-xl text-white">Deposit</button>
                     </div>
                 </div>
-                <div class="bg-emerald-400 text-white px-8 py-5 rounded-xl">
-                    <h4 class="text-3xl font-semibold mb-3">Please Withdraw</h4>
+                <div class="bg-emerald-400 px-8 py-5 rounded-xl">
+                    <h4 class="text-3xl font-semibold mb-3 text-white">Please Withdraw</h4>
                     <div class="pl-10">
                         <input class="w-9/12 px-5 py-2 mb-5" type="text" name="" id="user-email"
                             placeholder="$ Amount you want to withdraw">
 
 
-                        <button id="btn-submit"
-                            class="bg-amber-600 text-white text-xl font-semibold px-8 py-3 block rounded-xl">Withdraw</button>
+                        <button id="btn-widraw"
+                            class="bg-amber-600 text-white text-xl font-semibold px-8 py-3 block rounded-xl text-white">Withdraw</button>
                     </div>
                 </div>
-
-
             </div>
         </section>
 
@@ -69,6 +67,7 @@
 
     <!-- JS Script -->
     <script src="js/login.js"></script>
+    <script src="js/deposit.js"></script>
 </body>
 
 </html>
